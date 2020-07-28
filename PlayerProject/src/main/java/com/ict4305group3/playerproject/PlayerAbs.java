@@ -18,10 +18,10 @@ abstract class PlayerAbs {
     public int stats;
     public String sport;
 
-    public String getNameAbs() {
+    public String getNamAbs() {
         return name;
     }
 
-    abstract int getStatsA();
-    abstract String getSportA();
+    abstract int getStatsAbs();
+    abstract String getSportAbs();
 }
