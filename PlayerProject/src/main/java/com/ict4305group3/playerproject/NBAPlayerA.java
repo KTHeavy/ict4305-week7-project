@@ -6,30 +6,38 @@
 package com.ict4305group3.playerproject;
 
 /**
- * 
+ *
  * @author Ivan Piesh
  * @author Sara Sobczyk
  * @author Dawn Tauriac
  * @author Kevin Taylor
  */
-
-public class NBAPlayerA extends PlayerAbs{
-
-
-  public NBAPlayerA(String name, int stats) {
-	this.name = name;
-	this.stats = stats;
-	this.sport = "NBA";
-  }
-
-
-  public int getStatsAbs() {
-	return stats;
-  }
-
-
-  public String getSportAbs() {
-	return sport;
-  }
-  
+public class NBAPlayerA extends PlayerAbs {
+    
+    /**
+     *
+     * @param name
+     * @param stats
+     */
+    public NBAPlayerA(String name, int stats) {
+        super(name, stats);
+        this.sport = "NBA";
+    }
+    
+    /**
+     *
+     * @return stats
+     */
+    public int getStatsAbs() {
+        return stats;
+    }
+    
+    /**
+     *
+     * @return sport
+     */
+    public String getSportAbs() {
+        return sport;
+    }
+    
 }

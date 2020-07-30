@@ -6,22 +6,29 @@
 package com.ict4305group3.playerproject;
 
 /**
- * 
+ *
  * @author Ivan Piesh
  * @author Sara Sobczyk
  * @author Dawn Tauriac
  * @author Kevin Taylor
  */
-
 abstract class PlayerAbs {
+
     public String name;
     public int stats;
     public String sport;
-
-    public String getNamAbs() {
+    
+    public PlayerAbs(String name, int stats) {
+        this.name = name;
+        this.stats = stats;
+        this.sport = "Not defined";
+    }
+    
+    public String getNameAbs() {
         return name;
     }
 
     abstract int getStatsAbs();
+
     abstract String getSportAbs();
 }

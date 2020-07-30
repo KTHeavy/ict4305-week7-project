@@ -12,23 +12,9 @@ package com.ict4305group3.playerproject;
  * @author Dawn Tauriac
  * @author Kevin Taylor
  */
-public class NFLPlayerA extends PlayerAbs {
+public class PlayerMain {
 
-    /**
-     *
-     * @param name
-     * @param stats
-     */
-    public NFLPlayerA(String name, int stats) {
-        super(name, stats);
-        this.sport = "NFL";
-    }
-
-    int getStatsAbs() {
-        return stats;
-    }
-
-    String getSportAbs() {
-        return sport;
+    public static void main(String[] args) {
+        
     }
 }

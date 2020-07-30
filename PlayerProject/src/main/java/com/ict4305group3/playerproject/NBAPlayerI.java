@@ -6,34 +6,50 @@
 package com.ict4305group3.playerproject;
 
 /**
- * 
+ *
  * @author Ivan Piesh
  * @author Sara Sobczyk
  * @author Dawn Tauriac
  * @author Kevin Taylor
  */
-
 public class NBAPlayerI implements Player {
 
-  String name;
-  int stats;
-  String sport;
+    String name;
+    int stats;
+    String sport;
 
-  public NBAPlayerI(String name, int stats) {
-	this.name = name;
-	this.stats = stats;
-	this.sport = "NBA";
-  }
+    /**
+     *
+     * @param name
+     * @param stats
+     */
+    public NBAPlayerI(String name, int stats) {
+        this.name = name;
+        this.stats = stats;
+        this.sport = "NBA";
+    }
 
-  public String getName() {
-	return name;
-  }
+    /**
+     *
+     * @return name
+     */
+    public String getName() {
+        return name;
+    }
 
-  public int getStats() {
-	return stats;
-  }
+    /**
+     *
+     * @return stats
+     */
+    public int getStats() {
+        return stats;
+    }
 
-  public String getSport() {
-	return sport;
-  }
+    /**
+     *
+     * @return sport
+     */
+    public String getSport() {
+        return sport;
+    }
 }
