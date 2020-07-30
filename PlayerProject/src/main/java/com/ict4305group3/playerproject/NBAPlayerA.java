@@ -13,15 +13,23 @@ package com.ict4305group3.playerproject;
  * @author Kevin Taylor
  */
 
-abstract class PlayerAbs {
-    public String name;
-    public int stats;
-    public String sport;
+public class NBAPlayerA extends PlayerAbs{
 
-    public String getNamAbs() {
-        return name;
-    }
 
-    abstract int getStatsAbs();
-    abstract String getSportAbs();
+  public NBAPlayerA(String name, int stats) {
+	this.name = name;
+	this.stats = stats;
+	this.sport = "NBA";
+  }
+
+
+  public int getStatsAbs() {
+	return stats;
+  }
+
+
+  public String getSportAbs() {
+	return sport;
+  }
+  
 }
