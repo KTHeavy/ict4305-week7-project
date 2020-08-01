@@ -14,9 +14,9 @@ package com.ict4305group3.playerproject;
  */
 abstract class PlayerAbs {
 
-    public String name;
-    public int stats;
-    public String sport;
+    private final String name;
+    protected int stats;
+    protected String sport;
     
     public PlayerAbs(String name, int stats) {
         this.name = name;
@@ -25,6 +25,10 @@ abstract class PlayerAbs {
         if (name.isBlank()) throw new IllegalArgumentException("Name cannot be blank");
     }
     
+    /**
+     *
+     * @return name
+     */
     public String getNameAbs() {
         return name;
     }

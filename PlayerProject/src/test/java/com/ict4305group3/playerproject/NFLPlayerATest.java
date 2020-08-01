@@ -38,7 +38,7 @@ public class NFLPlayerATest {
     @Test
     public void testGetNameAbs() {
         String e = "Dick Butkus";
-        String a = player.name;
+        String a = player.getNameAbs();
         assertEquals(e, a);
     }
     
@@ -48,7 +48,7 @@ public class NFLPlayerATest {
     @Test
     public void testGetStatsAbs() {
         int e = 119;
-        int a = player.stats;
+        int a = player.getStatsAbs();
         assertEquals(e, a);
     }
 
@@ -58,7 +58,7 @@ public class NFLPlayerATest {
     @Test
     public void testGetSportAbs() {
         String e = "NFL";
-        String a = player.sport;
+        String a = player.getSportAbs();
         assertEquals(e, a);
     }
     

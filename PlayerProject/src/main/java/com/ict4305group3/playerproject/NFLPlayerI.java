@@ -14,9 +14,9 @@ package com.ict4305group3.playerproject;
  */
 public class NFLPlayerI implements Player {
 
-    String name;
-    int stats;
-    String sport;
+    private final String name;
+    private int stats;
+    private String sport;
 
     /**
      *
@@ -32,7 +32,7 @@ public class NFLPlayerI implements Player {
 
     /**
      *
-     * @return
+     * @return name
      */
     @Override
     public String getName() {
@@ -41,7 +41,7 @@ public class NFLPlayerI implements Player {
 
     /**
      *
-     * @return
+     * @return stats
      */
     @Override
     public int getStats() {
@@ -50,7 +50,7 @@ public class NFLPlayerI implements Player {
 
     /**
      *
-     * @return
+     * @return sport
      */
     @Override
     public String getSport() {

@@ -22,13 +22,13 @@ public class PlayerMain {
         var nbaPlayer2 = new NBAPlayerI("Larry Bird", 897);
         
         System.out.println("-------- Player Lifetime Games Played --------");
-        System.out.println("\n" + nbaPlayer1.name + " | " + nbaPlayer1.stats + 
-                " games played | " + nbaPlayer1.sport);
-        System.out.println(nbaPlayer2.name + " | " + nbaPlayer2.stats + 
-                " games played | " + nbaPlayer2.sport);
-        System.out.println("\n" + nflPlayer1.name + " | " + nflPlayer1.stats + 
-                " games played | " + nflPlayer1.sport);
-        System.out.println(nflPlayer2.name + " | " + nflPlayer2.stats + 
-                " games played | " + nflPlayer2.sport);
+        System.out.println("\n" + nbaPlayer1.getNameAbs() + " | " + nbaPlayer1.getStatsAbs() + 
+                " games played | " + nbaPlayer1.getSportAbs());
+        System.out.println(nbaPlayer2.getName() + " | " + nbaPlayer2.getStats() + 
+                " games played | " + nbaPlayer2.getSport());
+        System.out.println("\n" + nflPlayer1.getNameAbs() + " | " + nflPlayer1.getStatsAbs() + 
+                " games played | " + nflPlayer1.getSportAbs());
+        System.out.println(nflPlayer2.getName() + " | " + nflPlayer2.getStats() + 
+                " games played | " + nflPlayer2.getSport());
     }
 }

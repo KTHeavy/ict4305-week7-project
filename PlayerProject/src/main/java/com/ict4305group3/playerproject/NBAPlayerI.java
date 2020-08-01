@@ -14,9 +14,9 @@ package com.ict4305group3.playerproject;
  */
 public class NBAPlayerI implements Player {
 
-    String name;
-    int stats;
-    String sport;
+    private final String name;
+    private int stats;
+    private String sport;
 
     /**
      *
