@@ -27,12 +27,14 @@ public class NFLPlayerI implements Player {
         this.name = name;
         this.stats = stats;
         this.sport = "NFL";
+        if (name.isBlank()) throw new IllegalArgumentException("Name cannot be blank");
     }
 
     /**
      *
      * @return
      */
+    @Override
     public String getName() {
         return name;
     }
@@ -41,6 +43,7 @@ public class NFLPlayerI implements Player {
      *
      * @return
      */
+    @Override
     public int getStats() {
         return stats;
     }
@@ -49,6 +52,7 @@ public class NFLPlayerI implements Player {
      *
      * @return
      */
+    @Override
     public String getSport() {
         return sport;
     }

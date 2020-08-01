@@ -24,10 +24,12 @@ public class NFLPlayerA extends PlayerAbs {
         this.sport = "NFL";
     }
 
+    @Override
     int getStatsAbs() {
         return stats;
     }
 
+    @Override
     String getSportAbs() {
         return sport;
     }

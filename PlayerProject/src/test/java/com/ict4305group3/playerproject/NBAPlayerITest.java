@@ -6,19 +6,34 @@
 package com.ict4305group3.playerproject;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  *
- * @author ssobczyk
+ * @author Ivan Piesh
+ * @author Sara Sobczyk
+ * @author Dawn Touriac
+ * @author Kevin Taylor
  */
 public class NBAPlayerITest {
     
     String name = "LeBron James";
     int stats = 12-4;
-    String sport = "NBA";
     NBAPlayerI details = new NBAPlayerI(name, stats);
 
+    /**
+     * Test of thrown exceptions for name argument, of class NBAPlayerI.
+     */
+    @Test
+    public void testIllegalNameExcetption() {
+        try {
+            NBAPlayerI details = new NBAPlayerI("", stats);
+        } catch (IllegalArgumentException e) {
+            String errorName = "Name cannot be blank";
+            assertEquals(errorName, e.getMessage());
+        }
+    }
+    
     /**
      * Test of getName method, of class NFLPlayerI.
      */

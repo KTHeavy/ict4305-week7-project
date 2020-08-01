@@ -28,6 +28,7 @@ public class NBAPlayerA extends PlayerAbs {
      *
      * @return stats
      */
+    @Override
     public int getStatsAbs() {
         return stats;
     }
@@ -36,6 +37,7 @@ public class NBAPlayerA extends PlayerAbs {
      *
      * @return sport
      */
+    @Override
     public String getSportAbs() {
         return sport;
     }

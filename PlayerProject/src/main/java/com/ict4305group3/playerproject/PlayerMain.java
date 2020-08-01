@@ -16,5 +16,19 @@ public class PlayerMain {
 
     public static void main(String[] args) {
         
+        var nflPlayer1 = new NFLPlayerA("Joe Montana", 192);
+        var nbaPlayer1 = new NBAPlayerA("Michael Jordan", 1072);
+        var nflPlayer2 = new NFLPlayerI("Jerry Rice", 303);
+        var nbaPlayer2 = new NBAPlayerI("Larry Bird", 897);
+        
+        System.out.println("-------- Player Lifetime Games Played --------");
+        System.out.println("\n" + nbaPlayer1.name + " | " + nbaPlayer1.stats + 
+                " games played | " + nbaPlayer1.sport);
+        System.out.println(nbaPlayer2.name + " | " + nbaPlayer2.stats + 
+                " games played | " + nbaPlayer2.sport);
+        System.out.println("\n" + nflPlayer1.name + " | " + nflPlayer1.stats + 
+                " games played | " + nflPlayer1.sport);
+        System.out.println(nflPlayer2.name + " | " + nflPlayer2.stats + 
+                " games played | " + nflPlayer2.sport);
     }
 }

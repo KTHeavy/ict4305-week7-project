@@ -22,6 +22,7 @@ abstract class PlayerAbs {
         this.name = name;
         this.stats = stats;
         this.sport = "Not defined";
+        if (name.isBlank()) throw new IllegalArgumentException("Name cannot be blank");
     }
     
     public String getNameAbs() {
